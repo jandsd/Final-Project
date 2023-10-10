@@ -16,5 +16,5 @@ Leveraging the power of Langchain, the creation of chatbots becomes effortless. 
 - **Chatbot with Web Browser Access**: An internet-enabled chatbot capable of answering user queries about recent events.
 - **Chat with your Documents**: Empower the chatbot with the ability to access custom documents, enabling it to provide answers to user queries based on the referenced information.
 
-To explore sample usage of each chatbot, please navigate to the corresponding chatbot section.
+To explore sample usage of each chatbot, please navigate to  the corresponding chatbot section.
 """)
