@@ -7,14 +7,14 @@ from langchain.chains import ConversationChain
 
 st.set_page_config(page_title="Chatbot", page_icon="💬")
 st.header('Basic Chatbot')
-st.write('Allows users to interact with the OpenAI LLMs')
+st.write('Allow users to interact with the OpenAI LLMs')
 
 
 class Basic:
 
     def __init__(self):
         utils.configure_openai_api_key()
-        self.openai_model = "gpt-3.5-turbo"
+        self.openai_model = 'gpt-3.5-turbo'
 
     def setup_chain(self):
         llm = OpenAI(model_name=self.openai_model,
