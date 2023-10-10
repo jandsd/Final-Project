@@ -8,7 +8,7 @@ from langchain.document_loaders import PyPDFLoader
 from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationalRetrievalChain
 from langchain.embeddings import OpenAIEmbeddings
-from langchain.vectorstores import Chroma
+from langchain.vectorstores import FAISS
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 
 st.set_page_config(page_title="ChatPDF", page_icon="📄")
@@ -51,7 +51,7 @@ class CustomDataChatbot:
 
         # Create embeddings and store in vectordb
         embeddings = OpenAIEmbeddings()
-        vectordb = Chroma.from_documents(splits, embeddings)
+        vectordb = FAISS.from_documents(splits, embeddings)
 
         # Define retriever
         retriever = vectordb.as_retriever()
