@@ -7,7 +7,7 @@ from langchain.chains import ConversationChain
 
 st.set_page_config(page_title="Chatbot", page_icon="💬")
 st.header('Basic Chatbot')
-st.write('Allow users to interact with the OpenAI LLMs')
+st.write(' Allow users to interact with the OpenAI LLMs ')
 
 
 class Basic:
